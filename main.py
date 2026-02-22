@@ -1,5 +1,7 @@
 from pyscript import display, document
 
+# registration defintion
+
 def intramsteam(e):  
     document.getElementById('registrationoutput').innerHTML = '' # resets value
 
@@ -46,6 +48,8 @@ def intramsteam(e):
     else: 
          display(f"You are not eligible for the intramurals.", target="registrationoutput")
 
+# account verification definition
+
 def account_verify(e):
     document.getElementById('accountoutput').innerHTML = '' # resets value
     
@@ -75,13 +79,16 @@ def account_verify(e):
     elif len(password) >= 10 and not len(username) >= 7:
             display(f"Your username must be 7 characters or more.", target="accountoutput")
 
+# player list definition
 
 def show_players(event):
-    document.getElementById("listoutput").innerHTML = ""
+    document.getElementById("listoutput").innerHTML = "" # resets value
 
     getsectionB = document.querySelector('#sectionselect2').value
     sectionB = getsectionB
-    players = []
+    players = [] # empty list to be updated with the if statements 
+
+    # if statements, determines which class list to pull from
 
     if sectionB == 'Emerald':
         players = [
@@ -201,8 +208,10 @@ def show_players(event):
              "Zosa",
         ]
 
-    for player in players:
-        display(f"- {player}", target="listoutput")
+    # loop statement
+
+    for player in players: # for loop, continues until the entire list is displayed
+        display(f"- {player}", target="listoutput") # displays the list
 
     
 
