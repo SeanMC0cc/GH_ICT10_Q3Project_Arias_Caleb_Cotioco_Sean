@@ -5,8 +5,8 @@ body {
 }
 
 .navbar {
-    background-color: #7D8570;
-    border: 5px solid #646F58;
+    background-color: #707D85;
+    border: 5px solid #58646F;
 }
 
 .nav-link {
@@ -34,9 +34,9 @@ body {
 .card {
     margin: 20px;
     padding:8px;
-    background-color: #AFBE8F;
+    background-color: #8FAFBE;
     border-radius: 25px;
-    border: 5px solid #7D8570;
+    border: 5px solid #58646F;
     color: #3E363F;
 }
 
@@ -80,9 +80,9 @@ select{
 
 .title {
     text-align: center;
-    background-color: #AFBE8F;
+    background-color: #8FAFBE;
     border-radius: 25px;
-    border: 5px solid #7D8570;
+    border: 5px solid #58646F;
     color: #504B3A;
     font-family: courier;
 }
